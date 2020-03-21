@@ -92,7 +92,7 @@ describe('Part', function() {
     assert.equal(computer.broken, false)
   })
 
-  it.skip('is invalid without a name', function() {
+  it('is invalid without a name', function() {
     var computer = new Part(
       {
         type: 'computer',
@@ -103,7 +103,7 @@ describe('Part', function() {
     assert.isFalse(computer.isValid())
   })
 
-  it.skip('is invalid without a type', function() {
+  it('is invalid without a type', function() {
     var computer = new Part(
       {
         name: 'Alienware 550x',
@@ -114,7 +114,7 @@ describe('Part', function() {
     assert.isFalse(computer.isValid())
   })
 
-  it.skip('is invalid without a value', function() {
+  it('is invalid without a value', function() {
     var computer = new Part(
       {
         name: 'Alienware 550x',
@@ -125,7 +125,7 @@ describe('Part', function() {
     assert.isFalse(computer.isValid())
   })
 
-  it.skip('is valid', function() {
+  it('is valid', function() {
     var computer = new Part(
       {
         name: 'Alienware 550x',
