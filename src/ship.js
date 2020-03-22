@@ -16,7 +16,8 @@ class Ship {
   }
 
   loadCargo(partCargo) {
-    var cargoToLoad = this.cargo && this.part;
+    var cargoToLoad = this.cargo && this.part && [partCargo];
+     
   }
 
    addCrew(crewTooAdd) {
@@ -28,10 +29,6 @@ for (var i = 0; i < crewSpotsAvailable; i++) {
       this.crew.push(potentialCrewMember);
 
     };
-
-
-
-
 
 }
   }
