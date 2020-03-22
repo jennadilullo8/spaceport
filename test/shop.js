@@ -5,13 +5,13 @@ var Being = require('../src/being');
 var Ship = require('../src/ship');
 
 describe('Shop', function() {
-  it.skip('has a name', function() {
+  it('has a name', function() {
     var newShop = new Shop({name: 'EZ-way'})
 
     assert.equal(newShop.name, 'EZ-way')
   })
 
-  it.skip('can have a different name', function() {
+  it('can have a different name', function() {
     var newShop = new Shop({name: 'Conogo'})
 
     assert.equal(newShop.name, 'Conogo')
@@ -68,7 +68,7 @@ describe('Shop', function() {
 
   it.skip('cannot outfit a ship without a captian', function() {
     var fighter = new Ship(
-      { 
+      {
         name: 'Atlantis',
         type: 'military',
         maxCrew: 2,
@@ -88,7 +88,7 @@ describe('Shop', function() {
     var captian = new Being('Will', 'human');
 
     var fighter = new Ship(
-      { 
+      {
         name: 'Atlantis',
         type: 'military',
         captian: captian,
@@ -110,7 +110,7 @@ describe('Shop', function() {
     captian.credits = 100
 
     var fighter = new Ship(
-      { 
+      {
         name: 'Atlantis',
         type: 'military',
         captian: captian,
@@ -132,7 +132,7 @@ describe('Shop', function() {
     captian.credits = 1000
 
     var fighter = new Ship(
-      { 
+      {
         name: 'Atlantis',
         type: 'military',
         captian: captian,
