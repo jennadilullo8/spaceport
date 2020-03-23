@@ -9,10 +9,10 @@ class Part {
   }
 
 isValid() {
-  if(true) {
-    return false
+  if(this.name && this.type && this.value) {
+    return true;
   } else {
-    return true
+    return false;
   }
 };
 

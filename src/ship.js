@@ -10,15 +10,15 @@ class Ship {
     this.fuel = shuttle.fuel || 0;
     this.captain = shuttle.captain;
     this.crew = shuttle.crew || [];
-    this.cargo = shuttle.cargo || [];
+    this.cargo = shuttle.cargo || [] || {};
     this.parts = shuttle.parts || {};
-    this.part = shuttle.part;
+    this.part = shuttle.part
   }
 
   loadCargo(partCargo) {
-    var cargoToLoad = this.cargo && this.part && [partCargo];
-     
-  }
+    var cargoToLoad = this.cargo && this.part;
+    var itemsInCargo = [partCargo];
+}
 
    addCrew(crewTooAdd) {
      var crewSpotsAvailable = this.maxCrew - this.crew.length;
