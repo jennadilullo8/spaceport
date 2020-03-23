@@ -17,7 +17,7 @@ describe('Shop', function() {
     assert.equal(newShop.name, 'Conogo')
   })
 
-  it.skip('has no inventory by default', function() {
+  it('has no inventory by default', function() {
     var newShop = new Shop({name: 'Conogo'})
 
     assert.deepEqual(newShop.inventory, {})

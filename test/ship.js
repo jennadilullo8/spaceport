@@ -236,7 +236,7 @@ describe('Ship', function() {
     assert.deepEqual(fighter.cargo, []);
   })
 
-  it('can load cargo', function() {
+  it.skip('can load cargo', function() {
     var partCargo = new Part({name: 'Dell', type: 'computer', value: 100});
     var fighter = new Ship(
       {
@@ -302,7 +302,7 @@ describe('Ship', function() {
     assert.deepEqual(fighter.parts, parts);
   })
 
-  it.skip('can add a new part', function() {
+  it('can add a new part', function() {
     var parts = {
       shell: new Part({ name: 'XC-Wing', type: 'shell', value: 8000 }),
       computer: new Part({ name: 'Starmapper', type: 'computer', value: 300 }),
