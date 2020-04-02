@@ -3,7 +3,7 @@ class Part {
     this.name = fighterShell.name;
     this.type = fighterShell.type === 'hyperdive' ||
     fighterShell.type === 'flatware' || fighterShell.type === 'drill'
-    ? undefined : fighterShell.type
+    ? undefined : fighterShell.type;
     this.value = fighterShell.value;
     this.broken = fighterShell.broken === false;
   }
@@ -14,9 +14,9 @@ isValid() {
   } else {
     return false;
   }
-};
+}
 
-};
+}
 
 
 
